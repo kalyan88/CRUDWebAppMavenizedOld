@@ -36,6 +36,6 @@ public class MainController {
 		shop.setName(name);
 		shop.setStaffName(new String[]{"Kalyan", "Gurugubelli"});
 		return shop;
-	}
+	} 
      	
 }
