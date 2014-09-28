@@ -28,5 +28,14 @@ public class MainController {
 		shop.setStaffName(new String[]{"Kalyan", "Gurugubelli"});
 		return shop;
 	}
+	
+	@RequestMapping(value="test", method = RequestMethod.GET)
+	public @ResponseBody Shop getJSON(@PathVariable String name) {
+ 
+		Shop shop = new Shop();
+		shop.setName(name);
+		shop.setStaffName(new String[]{"Kalyan", "Gurugubelli"});
+		return shop;
+	}
      	
 }
